@@ -138,7 +138,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
-    <ClCompile Include="src\PixelEngine.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\shaders\EBO.cpp" />
+    <ClCompile Include="src\shaders\Shader.cpp" />
+    <ClCompile Include="src\shaders\VAO.cpp" />
+    <ClCompile Include="src\shaders\VBO.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\shaders\default.frag" />
+    <None Include="src\shaders\default.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\shaders\Shader.h" />
+    <ClInclude Include="src\shaders\EBO.h" />
+    <ClInclude Include="src\shaders\VAO.h" />
+    <ClInclude Include="src\shaders\VBO.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
